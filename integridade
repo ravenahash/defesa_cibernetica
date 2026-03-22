@@ -1,0 +1,83 @@
+# MD5 hash value of a file
+import hashlib
+
+filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.md5(bytes).hexdigest();
+    print(f"MD5 hash of {filename}: {readable_hash}")
+
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.md5(bytes).hexdigest();
+    print(f"MD5 hash of {filename}: {readable_hash}")
+
+
+#sha256
+
+filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha256(bytes).hexdigest();
+    print(f"SHA256 hash of {filename}: {readable_hash}")
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha256(bytes).hexdigest();
+    print(f"SHA256 hash of {filename}: {readable_hash}")
+
+
+#sha1
+    filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha1(bytes).hexdigest();
+    print(f"sha1 hash of {filename}: {readable_hash}")
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha1(bytes).hexdigest();
+    print(f"sha1 hash of {filename}: {readable_hash}")
+
+    #sha512
+    filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha512(bytes).hexdigest();
+    print(f"sha512 hash of {filename}: {readable_hash}")
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha512(bytes).hexdigest();
+    print(f"sha512 hash of {filename}: {readable_hash}")
+
+    #sha224
+    filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha224(bytes).hexdigest();
+    print(f"sha224 hash of {filename}: {readable_hash}")
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha224(bytes).hexdigest();
+    print(f"sha224 hash of {filename}: {readable_hash}")
+
+    #sha338
+    filename = "ship.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha338(bytes).hexdigest();
+    print(f"sha512 hash of {filename}: {readable_hash}")
+
+filename = "plane.jpeg"
+with open(filename,"rb") as f:
+    bytes = f.read() # read file as bytes
+    readable_hash = hashlib.sha338(bytes).hexdigest();
+    print(f"sha512 hash of {filename}: {readable_hash}")
