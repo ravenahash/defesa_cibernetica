@@ -1,5 +1,14 @@
-# MD5 hash value of a file
+
 import hashlib
+import os
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Change Python's current working directory
+working_directory = '/content/drive/DEFESA_CIBERNÉTICA'
+os.chdir(working_directory)
+
+# MD5 hash value of a file
 
 filename = "ship.jpeg"
 with open(filename,"rb") as f:
